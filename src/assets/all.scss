@@ -57,19 +57,19 @@
 }
 
 .trapezoid-3 {
-  width: 110px;
+  width: 80px;
   height: 24px;
   background-color: #000000;
   position: relative;
-  transform: rotate(90deg) translate(56px ,91px);
+  transform: rotate(90deg) translate(46px ,76px);
   clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
 }
 
- *,
- *::before,
- *::after {
-   outline: 1px solid red;
- }
+  // *,
+  // *::before,
+  // *::after {
+  //   outline: 1px solid red;
+  // }
 
   .img-icon{
     transform: rotate(90deg);
