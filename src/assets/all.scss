@@ -9,29 +9,67 @@
     height: 250px;
 }
 
+.img-product{
+  width: 100%;
+  height: 200px;
+  object-fit : contain
+}
+
+.w-p{
+  width: 25%;
+}
+
+@media (max-width:992px) {
+  .w-p{
+   width: 50% !important;
+  }
+}
+
+.fs-7{
+  font-size: 15px ;
+}
+
 .trapezoid {
-    width: 304px;
+    width: 84px;
     height: 24px;
     background-color: #000000;
     position: relative;
-    transform: rotate(90deg) translate(148px ,188px);
-    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+    transform: rotate(90deg) translate(48px ,78px);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.trapezoid-2 {
+  width: 194px;
+  height: 24px;
+  background-color: #000000;
+  position: relative;
+  transform: rotate(90deg) translate(100px ,133px);
+  clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
 }
 
 .trapezoid-1 {
-    width: 166px;
+    width: 358px;
     height: 24px;
     background-color: #000000;
     position: relative;
-    transform: rotate(90deg) translate(88px ,119px);
+    transform: rotate(90deg) translate(172px ,215px);
     clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
 }
 
-  *,
-  *::before,
-  *::after {
-    outline: 1px solid red;
-  }
+.trapezoid-3 {
+  width: 110px;
+  height: 24px;
+  background-color: #000000;
+  position: relative;
+  transform: rotate(90deg) translate(56px ,91px);
+  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+ *,
+ *::before,
+ *::after {
+   outline: 1px solid red;
+ }
 
   .img-icon{
     transform: rotate(90deg);
@@ -60,3 +98,8 @@
     left: 0;
     top: 0;
   }
+
+.btn-white:hover{
+  background-color: white;
+  color: black;
+}
