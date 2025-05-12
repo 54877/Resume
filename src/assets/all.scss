@@ -4,6 +4,8 @@
 @import "bootstrap/scss/utilities/api";
 
 .xiang-img{
+    object-fit: cover;
+    object-position: 50% 40%;
     border-radius: 50%;
     width:  250px;
     height: 250px;
