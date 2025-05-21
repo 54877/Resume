@@ -18,7 +18,7 @@ function IndexApp() {
       img: dramago,
       title: `DramaGo-交友網站`,
       introduce: '這是一個劇會交友平台，主要提供使用者發起劇會與參加劇會，專案由團隊共同發想、設計，並進行前端開發，我負責首頁與後台前端開發，同時擔任設計稿的組長',
-      skill: `使用到了 React+vite 框價，這專案不僅加強了我前端開發技能，還提升了團隊協作中的溝通與領導能力`
+      skill: `使用到了 React+vite 框架，這專案不僅加強了我前端開發技能，還提升了團隊協作中的溝通與領導能力`
     },
     {
       Url: `https://54877.github.io/js-week8/#recommendation`,
@@ -91,23 +91,25 @@ function IndexApp() {
       <main className=" container">
         <section className="row ">
 
-          <div className="col-lg-4 bg-black pt-5 d-flex flex-column align-items-center">
-            <h1 className="text-white fw-bolder">黃映翔</h1>
-            <h2 className="text-white">Ying Xiang Huang</h2>
-            <h3 className="text-white fs-5 mb-3">前端工程師</h3>
-            <div className="pb-5">
-              <img className="xiang-img" src={xiang} alt="" />
+          <div className="col-lg-4 bg-black ">
+            <div className="sticky-top d-flex flex-column align-items-center pt-5">
+              <h1 className="text-white fw-bolder">黃映翔</h1>
+              <h2 className="text-white">Ying Xiang Huang</h2>
+              <h3 className="text-white fs-5 mb-3">前端工程師</h3>
+              <div style={{paddingBottom: 60}}>
+                <img className="xiang-img" src={xiang} alt="" />
+              </div>
+              <div style={{paddingTop: 60}} className="d-flex pb-4 justify-content-center align-items-center border-4 border-top border-white w-100">
+                <svg className="me-2" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffffff"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" /></svg>
+                <h2 className="text-white fs-4 mb-0 fw-bold">CONTACT</h2>
+              </div>
+              <h4 className="text-white fs-5 fw-bold mb-3">phone</h4>
+              <h5 className="text-white fs-6 mb-4">0955-059-329</h5>
+              <h4 className="text-white fs-5 fw-bold mb-3">Email</h4>
+              <h5 className="text-white fs-6 mb-4">aa0955059329@gmail.con</h5>
+              <h4 className="text-white fs-5 fw-bold mb-3">Address</h4>
+              <h5 className="text-white fs-6 mb-4">新竹市 東區</h5>
             </div>
-            <div className="d-flex pt-4 pb-4 justify-content-center align-items-center border-4 border-top border-white w-100">
-              <svg className="me-2" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#ffffff"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" /></svg>
-              <h2 className="text-white fs-4 mb-0 fw-bold">CONTACT</h2>
-            </div>
-            <h4 className="text-white fs-5 fw-bold mb-3">phone</h4>
-            <h5 className="text-white fs-6 mb-4">0955-059-329</h5>
-            <h4 className="text-white fs-5 fw-bold mb-3">Email</h4>
-            <h5 className="text-white fs-6 mb-4">aa0955059329@gmail.con</h5>
-            <h4 className="text-white fs-5 fw-bold mb-3">Address</h4>
-            <h5 className="text-white fs-6 mb-4">新竹市 東區</h5>
           </div>
 
           <div className="col-lg-8 bg-white px-4  pt-5">
@@ -148,10 +150,16 @@ function IndexApp() {
                   <h2 className="fs-4 fw-semibold mb-3">頎邦科技股份有限公司</h2>
                   <div className="d-lg-flex d-none justify-content-between mb-3">
                     <span>半導體設備工程師</span>
-                    <span className="text-secondary">西元2021年/6月~西元2024年/6月</span>
+                    <span className="text-secondary">2021/6
+                      ~2024/6
+
+                    </span>
                   </div>
                   <p className="d-lg-none">半導體設備工程師</p>
-                  <p className="text-secondary d-lg-none">西元2021年/6月~西元2024年/6月</p>
+                  <p className="text-secondary d-lg-none">2021/6
+                    ~2024/6
+
+                  </p>
                 </div>
               </div>
             </div>
@@ -170,11 +178,16 @@ function IndexApp() {
                 <div className="ms-4 mb-4">
                   <h2 className="fs-4 fw-semibold mb-3">國立勤益科技大學</h2>
                   <div className="d-lg-flex d-none justify-content-between mb-3">
-                    <span>大學 ｜畢業 ｜國內</span>
-                    <span className="text-secondary">西元2016年/9月~西元2020年/9月</span>
+                    <span>畢業 ｜國內</span>
+                    <span className="text-secondary">2016/9
+                      ~2020/9
+
+                    </span>
                   </div>
                   <p className="d-lg-none">大學 ｜畢業 ｜國內</p>
-                  <p className="text-secondary d-lg-none">西元2016年/9月~西元2020年/9月</p>
+                  <p className="text-secondary d-lg-none">2016/9
+                    ~2020/9
+                  </p>
                   <div className="d-flex mb-3">
                     <span className="me-5">主修名稱</span>
                     <span className="text-secondary">電機工程</span>
@@ -188,22 +201,38 @@ function IndexApp() {
                   <h2 className="fs-4 fw-semibold mb-3">六角學院</h2>
                   <div className="d-lg-flex d-none justify-content-between mb-3">
                     <span>網頁切版直播班</span>
-                    <span className="text-secondary">西元2024年/7月~西元2024年/10月</span>
+                    <span className="text-secondary">2024/7
+                      ~2024/10
+                    </span>
                   </div>
                   <p className="d-lg-none">網頁切版直播班</p>
-                  <p className="text-secondary d-lg-none fs-7">西元2024年/7月~西元2024年/10月</p>
+                  <p className=" fs-7">— 學習 Html 、 Css 、 RWD  、 GitHub 、 Bootstrap 5</p>
+
+                  <p className="text-secondary d-lg-none fs-7">2024/7
+                    ~2024/10
+                  </p>
                   <div className="d-lg-flex d-none justify-content-between mb-3">
                     <span>JavaScript 工程師養成直播班</span>
-                    <span className="text-secondary">西元2024年/10月~西元2024年/12月</span>
+                    <span className="text-secondary">2024/10
+                      ~2024/12
+                    </span>
                   </div>
                   <p className="d-lg-none">JavaScript 工程師養成直播班</p>
-                  <p className="text-secondary d-lg-none fs-7">西元2024年/10月~西元2024年/12月</p>
+                  <p className=" fs-7">— 學習 Js 、 Scss 、 Axios</p>
+                  <p className="text-secondary d-lg-none fs-7">2024/10
+                    ~2024/12
+                  </p>
                   <div className="d-lg-flex d-none justify-content-between mb-3">
                     <span>React作品實戰</span>
-                    <span className="text-secondary">西元2025年/1月~西元2025年/4月</span>
+                    <span className="text-secondary">2025/1
+                      ~2025/4
+                    </span>
                   </div>
                   <p className="d-lg-none">React作品實戰</p>
-                  <p className="d-lg-none text-secondary">西元2025年/1月~西元2025年/4月</p>
+                  <p className=" fs-7">— 學習 React 框架</p>
+                  <p className="d-lg-none text-secondary">2025/1
+                    ~2025/4
+                  </p>
                 </div>
               </div>
             </div>
@@ -266,60 +295,41 @@ function IndexApp() {
                 </div>
               </div>
               <div className="px-4">
-                <div className="d-none d-lg-block trapezoid-4"></div>
-                <button type="button" className="w-100 btn btn-info  d-flex align-items-center justify-content-center px-4 py-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <svg className="me-2" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" /></svg>
-                  <h2 className="text-white mb-0 fw-bold">作品集</h2>
-                </button>
+                <div className=" d-flex flex-column">
+                  <ul className="pt-3 ul-type">
+                    {data.map((e) => {
+                      const { title, Url, UrlGithub, img, introduce, skill } = e;
+                      return (
+                        <div>
+                          <div className="d-none d-lg-block trapezoid-4"></div>
+                          <div className="row" key={Url}>
+                            <div className="col-lg-6">
+                              <div className="mb-5">
+                                <img className="img-product border rounded-5" src={img} alt="" />
+                              </div>
+                            </div>
+                            <div className="col-lg-6">
+                              <div className="d-flex align-items-center justify-content-between mb-3">
+                                <a className="text-decoration-none text-black fs-4 fw-bolder mb-6" href={Url} target="_blank">{title}</a>
+                              </div>
+                              <p>{introduce}</p>
+                              <p>{skill}</p>
+                              <div className="d-flex justify-content-end mb-5 mb-lg-0">
+                                <a className="btn btn-dark text-decoration-none text-whilt me-3 fs-4 fw-bolder" target="_blank" href={UrlGithub}>Github</a>
+                                <a className="btn btn-dark text-decoration-none text-whilt fs-4 fw-bolder" target="_blank" href={Url}>Web</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
-
-      {/* modal */}
-      <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div className="modal-dialog modal-dialog-scrollable modal-lg">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">作品集</h5>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div className="modal-body">
-              <div className=" d-flex flex-column">
-                <ul className="pt-3 ul-type">
-                  {data.map((e) => {
-                    const { title, Url, UrlGithub, img, introduce, skill } = e;
-                    return (
-                      <div className="row" key={Url}>
-                        <div className="col-lg-6">
-                          <div className="mb-5">
-                            <img className="img-product border rounded-5" src={img} alt="" />
-                          </div>
-                        </div>
-                        <div className="col-lg-6">
-                          <div className="d-flex align-items-center justify-content-between mb-3">
-                            <a className="text-decoration-none text-black fs-4 fw-bolder mb-6" href={Url} target="_blank">{title}</a>
-                          </div>
-                          <p>{introduce}</p>
-                          <p>{skill}</p>
-                          <div className="d-flex justify-content-end mb-5 mb-lg-0">
-                            <a className="btn btn-info text-decoration-none text-black me-5 fs-4 fw-bolder" href={UrlGithub}>Github</a>
-                            <a className="btn btn-info text-decoration-none text-black fs-4 fw-bolder" href={Url}>Web</a>
-                          </div>
-                        </div>
-                      </div>
-                    )
-                  })}
-                </ul>
-              </div>
-            </div>
-            <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   )
 };

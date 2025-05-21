@@ -50,12 +50,12 @@
 }
 
 .trapezoid-1 {
-    width: 358px;
+    width: 458px;
     height: 24px;
     background-color: #000000;
     position: relative;
-    transform: rotate(90deg) translate(172px ,215px);
-    clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+    transform: rotate(90deg) translate(230px ,265px);
+    clip-path: polygon(3% 0%, 97% 0%, 100% 100%, 0% 100%);
 }
 
 .trapezoid-3 {
@@ -65,23 +65,19 @@
   position: relative;
   transform: rotate(90deg) translate(46px ,76px);
   clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  
 }
 
 .trapezoid-4{
-  width: 108px;
+  width: 335px;
   height: 24px;
   background-color: #000000;
   position: relative;
-  transform: rotate(90deg) translate(56px ,90px);
-  clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  transform: rotate(90deg) translate(165px ,204px);
+  clip-path: polygon(3% 0%, 97% 0%, 100% 100%, 0% 100%);
 }
 
-  //  *,
-  //  *::before,
-  //  *::after {
-  //    outline: 1px solid red;
-  //  }
-
+S
   .img-icon{
     transform: rotate(90deg);
   }
