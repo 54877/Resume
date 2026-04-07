@@ -199,6 +199,7 @@ function IndexApp() {
                   <p className="d-lg-none">半導體設備工程師</p>
                   <p className="text-secondary d-lg-none">2021/6 ~2024/6</p>
                 </div>
+
                 <div className="ms-4">
                   <h2 className="fs-4 fw-semibold mb-3">
                     晉泰科技股份有限公司
