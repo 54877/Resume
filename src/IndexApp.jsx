@@ -8,8 +8,10 @@ import back from "../src/image/後臺簡易功能.jpg";
 import glasess from "../src/image/眼鏡官網.jpg";
 import backFront from "../src/image/簡易前後台功能.jpg";
 import eazy2 from "../src/image/簡易套票.jpg";
+import { useState } from "react";
 
 function IndexApp() {
+  const [state, setState] = useState(false);
   const data = [
     {
       Url: `https://54877.github.io/DramaGo/`,
@@ -93,6 +95,19 @@ function IndexApp() {
     },
   ];
 
+  const dataBack = [
+    {
+      Url: `https://54877.github.io/DramaGo/`,
+      UrlGithub: `https://github.com/54877/DramaGo`,
+      UrlApiGithub: ``,
+      img: dramago,
+      title: `DramaGo-交友網站`,
+      introduce:
+        "這是一個劇會交友平台，主要提供使用者發起劇會與參加劇會，專案由團隊共同發想、設計，並進行前端開發，我負責首頁與後台前端開發，同時擔任設計稿的組長",
+      skill: `使用到了 React+vite 框架，這專案不僅加強了我前端開發技能，還提升了團隊協作中的溝通與領導能力`,
+    },
+  ];
+
   return (
     <>
       <main className=" container">
@@ -159,7 +174,10 @@ function IndexApp() {
                     <li className="fs-6 mb-3">
                       透過自學成功轉型為 前端工程師，熟練運用
                       HTML、CSS、JavaScript
-                      進行開發，並持續探索創新解法。我熱愛將技術與創意結合，積極優化使用者體驗，同時透過自主學習不斷精進技能。
+                      進行開發，並持續探索創新解法。我熱愛將技術與創意結合，積極優化使用者體驗。
+                    </li>
+                    <li className="fs-6 mb-3">
+                      目前就職中，透過自學不斷精進前端能力，且同時開始學習後端技術
                     </li>
                     <li className="fs-6">
                       深信過往的多元歷練，能為團隊帶來獨特的視角與適應力——無論面對任何挑戰，我都能以敏捷的學習力與正向態度，協作共創價值。
@@ -303,7 +321,7 @@ function IndexApp() {
               <div className="px-4">
                 <div className="d-none d-lg-block trapezoid-3"></div>
 
-                <div className="ms-4  flex-wrap d-flex justify-content-between">
+                <div className="ms-4  flex-wrap d-flex ">
                   <div className="d-flex align-items-center w-p  mb-3  ">
                     <svg
                       className="me-3"
@@ -408,9 +426,90 @@ function IndexApp() {
                     </svg>
                     <span className="fs-7 fw-bold">Github</span>
                   </div>
+
+                  <div className="d-flex  align-items-center w-p mb-3">
+                    <svg
+                      className="me-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#460902"
+                    >
+                      <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                    </svg>
+                    <span className="fs-7 fw-bold">Node.js</span>
+                  </div>
+                  <div className="d-flex  align-items-center w-p mb-3">
+                    <svg
+                      className="me-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#460902"
+                    >
+                      <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                    </svg>
+                    <span className="fs-7 fw-bold">Express</span>
+                  </div>
+                  <div className="d-flex  align-items-center w-p mb-3">
+                    <svg
+                      className="me-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#460902"
+                    >
+                      <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                    </svg>
+                    <span className="fs-7 fw-bold">Mysql</span>
+                  </div>
+                  <div className="d-flex  align-items-center w-p mb-3">
+                    <svg
+                      className="me-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#460902"
+                    >
+                      <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                    </svg>
+                    <span className="fs-7 fw-bold">Postgresql</span>
+                  </div>
+                  <div className="d-flex  align-items-center w-p mb-3">
+                    <svg
+                      className="me-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#460902"
+                    >
+                      <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                    </svg>
+                    <span className="fs-7 fw-bold">supabase</span>
+                  </div>
+                  <div className="d-flex  align-items-center w-p mb-3">
+                    <svg
+                      className="me-3"
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#460902"
+                    >
+                      <path d="m344-60-76-128-144-32 14-148-98-112 98-112-14-148 144-32 76-128 136 58 136-58 76 128 144 32-14 148 98 112-98 112 14 148-144 32-76 128-136-58-136 58Zm34-102 102-44 104 44 56-96 110-26-10-112 74-84-74-86 10-112-110-24-58-96-102 44-104-44-56 96-110 24 10 112-74 86 74 84-10 114 110 24 58 96Zm102-318Zm-42 142 226-226-56-58-170 170-86-84-56 56 142 142Z" />
+                    </svg>
+                    <span className="fs-7 fw-bold">render</span>
+                  </div>
                 </div>
               </div>
             </div>
+
+            {/* profile */}
             <div className="mb-4">
               <div className="d-flex ">
                 <div className="d-flex align-items-center">
@@ -425,64 +524,150 @@ function IndexApp() {
                     <path d="M280-280h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm-80 480q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z" />
                   </svg>
                   <h2 className="m-lg-0 mt-2 fw-bold">PORTFOLIO</h2>
+                  <button
+                    style={{
+                      marginLeft: "16px",
+                      backgroundColor: "#EAC452",
+                      padding: "4px 8px",
+                      borderRadius: "8px",
+                    }}
+                    onClick={() => {
+                      setState((v) => !v);
+                    }}
+                  >
+                    {state ? "全端" : "前端"}
+                  </button>
                 </div>
                 <div className="d-lg-block d-none ms-3 me-4 flex-grow-1 border-tr border-4 border-bottom border-dark"></div>
               </div>
-              <div className="px-4">
-                <div className=" d-flex flex-column">
-                  <ul className="pt-3 ul-type">
-                    {data.map((e, index) => {
-                      const { title, Url, UrlGithub, img, introduce, skill } =
-                        e;
-                      return (
-                        <div key={index}>
-                          <div className="d-none d-lg-block trapezoid-4"></div>
-                          <div className="row" key={Url}>
-                            <div className="col-lg-6">
-                              <div className="mb-5">
-                                <img
-                                  className="img-product border rounded-5"
-                                  src={img}
-                                  alt=""
-                                />
+              {state && (
+                <div className="px-4">
+                  <div className=" d-flex flex-column">
+                    <ul className="pt-3 ul-type">
+                      {data.map((e, index) => {
+                        const { title, Url, UrlGithub, img, introduce, skill } =
+                          e;
+                        return (
+                          <div key={index}>
+                            <div className="d-none d-lg-block trapezoid-4"></div>
+                            <div className="row" key={Url}>
+                              <div className="col-lg-6">
+                                <div className="mb-5">
+                                  <img
+                                    className="img-product border rounded-5"
+                                    src={img}
+                                    alt=""
+                                  />
+                                </div>
                               </div>
-                            </div>
-                            <div className="col-lg-6">
-                              <div className="d-flex align-items-center justify-content-between mb-3">
-                                <a
-                                  className="text-decoration-none text-black fs-4 fw-bolder mb-6"
-                                  href={Url}
-                                  target="_blank"
-                                >
-                                  {title}
-                                </a>
-                              </div>
-                              <p>{introduce}</p>
-                              <p>{skill}</p>
-                              <div className="d-flex justify-content-end mb-5 mb-lg-0">
-                                <a
-                                  className="btn btn-dark text-decoration-none text-whilt me-3 fs-4 fw-bolder"
-                                  target="_blank"
-                                  href={UrlGithub}
-                                >
-                                  Github
-                                </a>
-                                <a
-                                  className="btn btn-dark text-decoration-none text-whilt fs-4 fw-bolder"
-                                  target="_blank"
-                                  href={Url}
-                                >
-                                  Web
-                                </a>
+                              <div className="col-lg-6">
+                                <div className="d-flex align-items-center justify-content-between mb-3">
+                                  <a
+                                    className="text-decoration-none text-black fs-4 fw-bolder mb-6"
+                                    href={Url}
+                                    target="_blank"
+                                  >
+                                    {title}
+                                  </a>
+                                </div>
+                                <p>{introduce}</p>
+                                <p>{skill}</p>
+                                <div className="d-flex justify-content-end mb-5 mb-lg-0">
+                                  <a
+                                    className="btn btn-dark text-decoration-none text-whilt me-3 fs-4 fw-bolder"
+                                    target="_blank"
+                                    href={UrlGithub}
+                                  >
+                                    Github
+                                  </a>
+                                  <a
+                                    className="btn btn-dark text-decoration-none text-whilt fs-4 fw-bolder"
+                                    target="_blank"
+                                    href={Url}
+                                  >
+                                    Web
+                                  </a>
+                                </div>
                               </div>
                             </div>
                           </div>
-                        </div>
-                      );
-                    })}
-                  </ul>
+                        );
+                      })}
+                    </ul>
+                  </div>
                 </div>
-              </div>
+              )}
+              {!state && (
+                <div className="px-4">
+                  <div className=" d-flex flex-column">
+                    <ul className="pt-3 ul-type">
+                      {dataBack.map((e, index) => {
+                        const {
+                          title,
+                          Url,
+                          UrlGithub,
+                          img,
+                          introduce,
+                          skill,
+                          UrlApiGithub,
+                        } = e;
+                        return (
+                          <div key={index}>
+                            <div className="d-none d-lg-block trapezoid-4"></div>
+                            <div className="row" key={Url}>
+                              <div className="col-lg-6">
+                                <div className="mb-5">
+                                  <img
+                                    className="img-product border rounded-5"
+                                    src={img}
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div className="col-lg-6">
+                                <div className="d-flex align-items-center justify-content-between mb-3">
+                                  <a
+                                    className="text-decoration-none text-black fs-4 fw-bolder mb-6"
+                                    href={Url}
+                                    target="_blank"
+                                  >
+                                    {title}
+                                  </a>
+                                </div>
+                                <p>{introduce}</p>
+                                <p>{skill}</p>
+                                <div className="d-flex justify-content-end mb-5 mb-lg-0">
+                                  <a
+                                    className="btn btn-dark text-decoration-none text-whilt me-3 fs-4 fw-bolder"
+                                    target="_blank"
+                                    href={UrlGithub}
+                                  >
+                                    Github
+                                  </a>
+                                  <a
+                                    className="btn btn-dark text-decoration-none text-whilt me-3 fs-4 fw-bolder"
+                                    target="_blank"
+                                    href={UrlApiGithub}
+                                  >
+                                    API Github
+                                  </a>
+                                  <a
+                                    className="btn btn-dark text-decoration-none text-whilt fs-4 fw-bolder"
+                                    target="_blank"
+                                    href={Url}
+                                  >
+                                    Web
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </section>
