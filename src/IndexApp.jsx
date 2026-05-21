@@ -8,6 +8,7 @@ import back from "../src/image/後臺簡易功能.jpg";
 import glasess from "../src/image/眼鏡官網.jpg";
 import backFront from "../src/image/簡易前後台功能.jpg";
 import eazy2 from "../src/image/簡易套票.jpg";
+import account from "../src/image/記帳.png";
 import { useState } from "react";
 
 function IndexApp() {
@@ -97,14 +98,19 @@ function IndexApp() {
 
   const dataBack = [
     {
-      Url: `https://54877.github.io/DramaGo/`,
-      UrlGithub: `https://github.com/54877/DramaGo`,
-      UrlApiGithub: ``,
-      img: dramago,
-      title: `DramaGo-交友網站`,
+      Url: `https://54877.github.io/account/`,
+      UrlGithub: `https://github.com/54877/account`,
+      UrlApiGithub: `https://github.com/54877/accounting_Api`,
+      img: account,
+      title: `簡易記帳網站`,
       introduce:
-        "這是一個劇會交友平台，主要提供使用者發起劇會與參加劇會，專案由團隊共同發想、設計，並進行前端開發，我負責首頁與後台前端開發，同時擔任設計稿的組長",
-      skill: `使用到了 React+vite 框架，這專案不僅加強了我前端開發技能，還提升了團隊協作中的溝通與領導能力`,
+        "獨立開發記帳系統，負責前端與後端 API 與資料庫設計，實作 JWT 驗證與權限控管，並進行基礎 System Design 規劃，完整實作從資料建模到 API 串接的後端流程。",
+      skill: (
+        <>
+          <b>前端：</b> Ts、styled-components、React + Vite <br />
+          <b>後端：</b> Node.js、Express、Postgresql
+        </>
+      ),
     },
   ];
 
@@ -548,13 +554,24 @@ function IndexApp() {
                         const { title, Url, UrlGithub, img, introduce, skill } =
                           e;
                         return (
-                          <div key={index}>
+                          <div key={index} className="mb-5">
                             <div className="d-none d-lg-block trapezoid-4"></div>
                             <div className="row" key={Url}>
-                              <div className="col-lg-6">
-                                <div className="mb-5">
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignContent: "center",
+                                }}
+                                className="col-lg-6"
+                              >
+                                <div
+                                  style={{
+                                    display: "flex",
+                                    alignContent: "center",
+                                  }}
+                                >
                                   <img
-                                    className="img-product border rounded-5"
+                                    className="img-product border rounded-5 "
                                     src={img}
                                     alt=""
                                   />
@@ -612,11 +629,14 @@ function IndexApp() {
                           UrlApiGithub,
                         } = e;
                         return (
-                          <div key={index}>
-                            <div className="d-none d-lg-block trapezoid-4"></div>
+                          <div key={index} className="mb-5">
+                            <div
+                              className="d-none d-lg-block trapezoi
+                            d-4"
+                            ></div>
                             <div className="row" key={Url}>
                               <div className="col-lg-6">
-                                <div className="mb-5">
+                                <div>
                                   <img
                                     className="img-product border rounded-5"
                                     src={img}
